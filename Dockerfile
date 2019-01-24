@@ -1,5 +1,5 @@
-FROM golang:1.11.4
+FROM golang:1.11.5
 
-COPY golangci-lint misspell reviewdog revive staticcheck unparam /go/bin/
+COPY goveralls golangci-lint misspell reviewdog revive staticcheck unparam /go/bin/
 
 WORKDIR $GOPATH
